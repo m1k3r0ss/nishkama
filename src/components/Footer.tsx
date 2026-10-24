@@ -15,16 +15,16 @@ export function Footer() {
           <div className="lg:col-span-4">
             <Link
               href="/"
-              className="inline-block group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2F7CEF] rounded-xl"
+              className="inline-block group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2F7CEF] rounded-2xl"
               aria-label="Nishkama CodeLab Homepage"
             >
-              <div className="bg-white px-3 py-1.5 rounded-xl inline-flex items-center shadow-sm transition-transform group-hover:scale-105">
+              <div className="bg-white px-5 py-3 rounded-2xl inline-flex items-center shadow-sm transition-all group-hover:scale-105 group-hover:shadow-md">
                 <Image
                   src={siteConfig.brand.assets.logoLockup}
                   alt="Nishkama CodeLab"
-                  width={170}
-                  height={54}
-                  className="h-8 w-auto object-contain"
+                  width={310}
+                  height={98}
+                  className="h-[53px] sm:h-[60px] md:h-[66px] lg:h-[70px] w-auto object-contain"
                 />
               </div>
             </Link>
@@ -111,13 +111,21 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-14 pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div className="flex items-center gap-3">
-            <Image
-              src={siteConfig.brand.assets.iconSquare}
-              alt="Nishkama CodeLab Mark"
-              width={22}
-              height={22}
-              className="h-5 w-5 rounded-md object-contain"
-            />
+            <Link
+              href="/"
+              className="inline-flex items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2F7CEF] rounded-lg group"
+              aria-label="Nishkama CodeLab Homepage"
+            >
+              <div className="bg-white px-3.5 py-1.5 rounded-xl inline-flex items-center shadow-xs transition-opacity group-hover:opacity-90">
+                <Image
+                  src={siteConfig.brand.assets.logoLockup}
+                  alt="Nishkama CodeLab"
+                  width={190}
+                  height={60}
+                  className="h-[34px] sm:h-[38px] w-auto object-contain"
+                />
+              </div>
+            </Link>
             <p>
               &copy; {currentYear} {siteConfig.name}. All rights reserved.
             </p>

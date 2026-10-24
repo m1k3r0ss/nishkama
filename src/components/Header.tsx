@@ -52,7 +52,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur-md transition-smooth">
       <nav
-        className="shell flex min-h-[72px] items-center justify-between gap-6"
+        className="shell flex min-h-[88px] sm:min-h-[94px] lg:min-h-[98px] items-center justify-between gap-6"
         aria-label="Main Navigation"
       >
         {/* Brand Logo Lockup using official transparent asset */}
@@ -64,10 +64,10 @@ export function Header() {
           <Image
             src={siteConfig.brand.assets.logoLockup}
             alt="Nishkama CodeLab"
-            width={190}
-            height={60}
+            width={310}
+            height={98}
             priority
-            className="h-9 sm:h-10 w-auto object-contain transition-transform group-hover:scale-[1.02]"
+            className="h-14 sm:h-[60px] md:h-[66px] lg:h-[72px] w-auto object-contain transition-transform group-hover:scale-[1.02]"
           />
         </Link>
 
@@ -247,7 +247,7 @@ export function Header() {
       {mobileMenuOpen && (
         <div
           id="mobile-menu-drawer"
-          className="fixed inset-x-0 top-[72px] bottom-0 z-40 bg-white border-t border-slate-200 p-6 flex flex-col justify-between overflow-y-auto lg:hidden animate-in fade-in slide-in-from-top-4 duration-200"
+          className="fixed inset-x-0 top-[88px] sm:top-[94px] bottom-0 z-40 bg-white border-t border-slate-200 p-6 flex flex-col justify-between overflow-y-auto lg:hidden animate-in fade-in slide-in-from-top-4 duration-200"
           role="dialog"
           aria-modal="true"
           aria-label="Mobile Navigation Menu"
